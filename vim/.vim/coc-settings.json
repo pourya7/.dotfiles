@@ -1,0 +1,77 @@
+{
+  // General
+  "suggest.enablePreview": true,
+  "suggest.enablePreselect": true,
+  "suggest.noselect": false,
+  "diagnostic.maxWindowHeight": 20,
+  "coc.preferences.formatOnType": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "json",
+    "css",
+    "markdown",
+    "Markdown",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescript.tsx",
+    "typescriptreact",
+    "rust",
+    "c",
+    "cc",
+    "cpp",
+    "c++",
+    "objc",
+    "objcpp",
+    "java"
+  ],
+  // ESLint
+  "eslint.autoFixOnSave": false,
+  "eslint.packageManager": "yarn",
+  "eslint.nodePath": "~/.config/yarn/global/node_modules",
+  // Prettier
+  "prettier.requireConfig": true,
+  "prettier.onlyUseLocalVersion": true,
+  // TS
+  "typescript.showUnused": false,
+  "typescript.suggestionActions.enabled": true,
+  // JS
+  "javascript.suggestionActions.enabled": true,
+  // TSServer
+  "tsserver.enable": true,
+  "tsserver.formatOnType": false,
+  // Language Servers
+  "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "filetypes": [
+        "c",
+        "cpp",
+        "objc",
+        "objcpp"
+      ],
+      "rootPatterns": [
+        ".ccls",
+        "compile_commands.json",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        },
+        "index": {
+          "threads": 2
+        }
+      }
+    }
+  },
+  // Java Configs
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-11",
+      "path": "/usr/lib/jvm/java-11-openjdk-amd64",
+      "default": true
+    }
+  ]
+}

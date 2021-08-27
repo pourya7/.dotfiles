@@ -1,0 +1,17 @@
+# This is Git's per-user configuration file.
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = vim
+[alias]
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -v
+[user]
+	name = Pourya Da
+	email = pourya7@gmail.com
+[pull]
+	rebase = false
+[checkout]
+	defaultRemote = origin
+[init]
+	defaultBranch = master

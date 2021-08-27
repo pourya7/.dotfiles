@@ -1,0 +1,16 @@
+# OS generated files #
+######################
+.DS_Store
+
+# Temp  Files #
+###############
+*~
+*.swp
+*.swo
+
+#IDE Files #
+############
+.vscode
+.idea
+.iml
+*.sublime-workspace
