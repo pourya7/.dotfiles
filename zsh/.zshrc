@@ -9,12 +9,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 export SDKMAN_DIR="$HOME/.sdkman"
 export PYENV_ROOT="$HOME/.pyenv"
 
-# SITEJET JIRA
-# export $JIRA_URL="http://websitebutler.atlassian.net"
-# export $JIRA_NAME="pourya7"
-# export $JIRA_DEFAULT_ACTIION="dashboard"
-# export $JIRA_RAPID_BOARD=true
-
 # PATH
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$PATH"
@@ -42,16 +36,15 @@ DISABLE_LS_COLORS=true # To not alias ls color
 
 # --- Plugins ---
 plugins=(
-    fd
-    mvn
-    git
-    jira
     docker
     docker-compose
-    zsh-completions
-    zsh-autosuggestions
-    zsh-syntax-highlighting
+    fd
+    git
+    mvn
     web-search
+    zsh-autosuggestions
+    zsh-completions
+    zsh-syntax-highlighting
 )
 
 # --- OH MY ZSH ---
