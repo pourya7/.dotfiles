@@ -16,15 +16,11 @@ set splitright                              " Open vertical splits on right
 set splitbelow                              " Open horizontal splits below
 
 " UI
-if (has("termguicolors"))
-  set termguicolors
-else
-  set term=screen-256color
-endif
 set list listchars=eol:¬,tab:>-,trail:·     " List characters
 set scrolloff=30                            " Set Cursor Position Vertically
 set showmatch                               " Show Matching Brackets
 set visualbell                              " Use Visual Bell instead of beeping
+set t_Co=256                                " Note: Neovim ignores t_Co and other terminal codes.
 
 " Searching
 set ignorecase incsearch smartcase hlsearch " Search Options

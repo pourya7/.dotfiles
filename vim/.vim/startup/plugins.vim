@@ -3,8 +3,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 Plug 'mhinz/vim-signify'
@@ -26,8 +25,6 @@ Plug 'honza/vim-snippets'
 Plug 'cespare/vim-toml', { 'for': 'toml' }
 
 Plug 'ryanoasis/vim-devicons'
-
-Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
