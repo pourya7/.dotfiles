@@ -47,10 +47,6 @@ let g:mta_filetypes = {
 
 " === FZF Settings ===
 let $FZF_DEFAULT_COMMAND = 'rg --files --hidden'
-command! -bang -nargs=* Rg
-  \ call fzf#vim#grep(
-  \   'rg --line-number --column --no-heading --color=always --smart-case --hidden --follow -- '.shellescape(<q-args>), 1,
-  \   fzf#vim#with_preview(), <bang>0)
 
 " === Tern ===
 let g:tern#command = ['tern', '--no-port-file --persistent']

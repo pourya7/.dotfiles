@@ -3,7 +3,6 @@
   "suggest.enablePreview": true,
   "suggest.enablePreselect": true,
   "suggest.noselect": false,
-  "diagnostic.maxWindowHeight": 20,
   "coc.preferences.formatOnType": false,
   "coc.preferences.formatOnSaveFiletypes": [
     "json",
