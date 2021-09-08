@@ -3,4 +3,7 @@ vim/.vim/plugged/*
 vim/.vim/sessions/*
 vim/.vim/view/*
 vim/.viminfo
+vim/.vim/autoload/plug.vim
+vim/.vim/autoload/plug.vim.old
+
 vifm/.config/vifm/vifminfo
