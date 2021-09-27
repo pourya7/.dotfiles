@@ -48,3 +48,6 @@ set shiftwidth=2 tabstop=2                  " Each tab -> 2 spaces
 
 " Autocomplete
 set completeopt=menuone,preview,noinsert    " Do not insert text from menu until user selects
+
+" Diff
+set diffopt+=iwhiteall
