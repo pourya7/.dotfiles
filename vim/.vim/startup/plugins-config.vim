@@ -72,7 +72,6 @@ let g:coc_global_extensions = [
       \ 'coc-css',
       \ 'coc-json',
       \ 'coc-java',
-      \ 'coc-emmet',
       \ 'coc-lists',
       \ 'coc-eslint',
       \ 'coc-prettier',

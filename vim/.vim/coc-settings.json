@@ -1,8 +1,38 @@
 {
-  // General
-  "suggest.enablePreview": true,
+  // COC Suggest
+  "suggest.autoTrigger": "always",
   "suggest.enablePreselect": true,
+  "suggest.enablePreview": true,
+  "suggest.floatEnable": false,
   "suggest.noselect": false,
+  "suggest.removeDuplicateItems": true,
+  "suggest.snippetIndicator": " °",
+  "suggest.triggerAfterInsertEnter": true,
+  "suggest.completionItemKindLabels": {
+    "class": "\uf0e8",
+    "color": "\ue22b",
+    "constant": "\uf8ff",
+    "enum": "\uf435",
+    "enumMember": "\uf02b",
+    "event": "\ufacd",
+    "field": "\uf93d",
+    "file": "\uf471",
+    "folder": "\uf115",
+    "interface": "\ufa52",
+    "keyword": "\uf893",
+    "operator": "\uf915",
+    "property": "\ufab6",
+    "reference": "\uf87a",
+    "snippet": "\uf64d",
+    "struct": "\ufb44",
+    "text": "\ue612",
+    "typeParameter": "\uf278",
+    "unit": "\uf475",
+    "value": "\uf8a3",
+    "variable": "\uf71b",
+    "default": "\uf29c"
+  },
+  // COC Preferences
   "coc.preferences.formatOnType": false,
   "coc.preferences.formatOnSaveFiletypes": [
     "json",
