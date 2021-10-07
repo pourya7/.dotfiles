@@ -63,8 +63,11 @@
   // TS
   "typescript.showUnused": false,
   "typescript.suggestionActions.enabled": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
   // JS
+  "javascript.showUnused": false,
   "javascript.suggestionActions.enabled": true,
+  "javascript.preferences.importModuleSpecifier": "non-relative",
   // TSServer
   "tsserver.enable": true,
   "tsserver.formatOnType": false,
