@@ -3,7 +3,6 @@
   "suggest.autoTrigger": "always",
   "suggest.enablePreselect": true,
   "suggest.enablePreview": true,
-  "suggest.floatEnable": false,
   "suggest.noselect": false,
   "suggest.removeDuplicateItems": true,
   "suggest.snippetIndicator": " °",
@@ -56,7 +55,7 @@
   // ESLint
   "eslint.autoFixOnSave": false,
   "eslint.packageManager": "yarn",
-  "eslint.nodePath": "~/.config/yarn/global/node_modules",
+  "eslint.alwaysShowStatus": true,
   // Prettier
   "prettier.requireConfig": true,
   "prettier.onlyUseLocalVersion": true,
