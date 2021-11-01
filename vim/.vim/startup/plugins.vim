@@ -22,8 +22,6 @@ Plug 'sheerun/vim-polyglot'
 
 Plug 'honza/vim-snippets'
 
-Plug 'cespare/vim-toml', { 'for': 'toml' }
-
 Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
