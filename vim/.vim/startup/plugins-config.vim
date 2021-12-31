@@ -5,6 +5,9 @@ let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 15
 
+" === Vim Polyglot ===
+" let g:polyglot_disabled = ['autoindent']
+
 " === Emmet Settings ===
 let g:user_emmet_install_global = 0
 

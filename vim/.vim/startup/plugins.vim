@@ -24,6 +24,10 @@ Plug 'honza/vim-snippets'
 
 Plug 'ryanoasis/vim-devicons'
 
+Plug 'zhimsel/vim-stay'
+
+Plug 'Konfekt/FastFold'
+
 call plug#end()
 
 autocmd! User nerdtree echom 'NERDTree is now loaded!'
