@@ -253,7 +253,7 @@ gwt() {
 }
 
 # ============================================================
-# Dev layout: nvim | claude + terminal
+# Dev layout: nvim | terminal + terminal
 # Usage: dev [path]   — opens a 3-pane tmux layout in the given path
 # ============================================================
 dev() {
@@ -265,10 +265,9 @@ dev() {
     tmux new-window -c "$target" -n "dev"
     # Left pane: nvim
     tmux send-keys "nvim ." Enter
-    # Right pane: claude (split right, 45% width)
+    # Right pane: terminal
     tmux split-window -h -l 20% -c "$target"
-    tmux send-keys "claude" Enter
-    # Bottom-right pane: terminal (split current right pane down, 30% height)
+    # Bottom-right pane: terminal
     tmux split-window -v -l 30% -c "$target"
     # Focus back on nvim (left pane)
     tmux select-pane -L
@@ -277,9 +276,8 @@ dev() {
     tmux new-session -d -s "$session" -c "$target"
     # Left pane: nvim
     tmux send-keys -t "$session" "nvim ." Enter
-    # Right pane: claude
+    # Right pane: terminal
     tmux split-window -h -t "$session" -l 20% -c "$target"
-    tmux send-keys -t "$session" "claude" Enter
     # Bottom-right: terminal
     tmux split-window -v -t "$session" -l 30% -c "$target"
     # Focus nvim

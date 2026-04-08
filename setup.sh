@@ -81,8 +81,8 @@ BREW_PACKAGES=(
   lazygit # TUI git client (integrates with LazyVim)
 
   # Dev tools
-  python3 # Python
-  pyenv   # Python version manager
+  fnm # Node version manager
+  uv  # Python manager
 )
 
 info "Installing brew packages..."
