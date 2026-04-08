@@ -1,0 +1,92 @@
+[user]
+	name = Pourya
+	email = pourya7@gmail.com
+
+[core]
+	editor = nvim
+	excludesfile = ~/.gitignore_global
+	autocrlf = input           # normalize line endings on commit
+	pager = delta              # use delta for diffs if available, falls back to less
+
+[init]
+	defaultBranch = main
+
+[push]
+	default = current          # push current branch to same-name remote branch
+	autoSetupRemote = true     # auto set upstream on first push
+
+[pull]
+	rebase = true              # rebase instead of merge on pull
+
+[rebase]
+	autoStash = true           # auto stash/unstash around rebase
+
+[merge]
+	ff = only                  # only fast-forward merges (explicit merge commits via --no-ff)
+	conflictstyle = zdiff3     # better conflict markers (requires git 2.35+)
+
+[diff]
+	algorithm = histogram      # better diff algorithm
+	colorMoved = default
+
+[fetch]
+	prune = true               # remove stale remote-tracking branches
+
+[status]
+	short = true
+	branch = true
+
+[log]
+	date = iso
+
+# ---- Pretty aliases ----
+[alias]
+	s   = status -sb
+	a   = add
+	c   = commit
+	cm  = commit -m
+	ca  = commit --amend
+	can = commit --amend --no-edit
+	p   = push
+	pl  = pull
+	co  = checkout
+	sw  = switch
+	br  = branch
+	lg  = log --oneline --decorate --graph
+	lga = log --oneline --decorate --graph --all
+	d   = diff
+	ds  = diff --staged
+	rb  = rebase
+	rbi = rebase -i
+	stl = stash list
+	stp = stash pop
+	sts = stash push -m
+
+	# Show files in last commit
+	show-files = show --stat --name-only
+
+	# Undo last commit (keep changes staged)
+	undo = reset --soft HEAD~1
+
+	# Clean up merged local branches
+	clean-branches = !git branch --merged | grep -v '\\*\\|main\\|master\\|develop' | xargs -n 1 git branch -d
+
+# ---- Delta (better diffs) ----
+# brew install git-delta
+[delta]
+	navigate = true
+	light = false
+	side-by-side = true
+	line-numbers = true
+	syntax-theme = catppuccin-mocha
+
+[interactive]
+	diffFilter = delta --color-only
+
+# ---- URL shortcuts ----
+[url "git@github.com:"]
+	insteadOf = gh:
+
+# ---- Credentials ----
+[credential]
+	helper = osxkeychain

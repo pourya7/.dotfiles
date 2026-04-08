@@ -1,0 +1,27 @@
+# Don't accidentally commit sensitive files
+.env
+.env.*
+*.secret
+secrets/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Neovim state (managed by nvim itself, not stored in dotfiles)
+nvim/.config/nvim/.luarc.json
+
+# Any local-only overrides
+*.local
+
+# Vim state (managed by vim itself, not stored in dotfiles)
+vim/.vim/.netrwhist
+vim/.vim/plugged/*
+vim/.vim/sessions/*
+vim/.vim/view/*
+vim/.viminfo
+vim/.vim/autoload/plug.vim
+vim/.vim/autoload/plug.vim.old
+
+# Vifm state
+vifm/.config/vifm/vifminfo
