@@ -267,8 +267,6 @@ dev() {
     tmux send-keys "nvim ." Enter
     # Right pane: terminal
     tmux split-window -h -l 20% -c "$target"
-    # Bottom-right pane: terminal
-    tmux split-window -v -l 30% -c "$target"
     # Focus back on nvim (left pane)
     tmux select-pane -L
   else
@@ -278,8 +276,6 @@ dev() {
     tmux send-keys -t "$session" "nvim ." Enter
     # Right pane: terminal
     tmux split-window -h -t "$session" -l 20% -c "$target"
-    # Bottom-right: terminal
-    tmux split-window -v -t "$session" -l 30% -c "$target"
     # Focus nvim
     tmux select-pane -t "$session" -L
     tmux attach-session -t "$session"
