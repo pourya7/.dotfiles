@@ -21,7 +21,15 @@ return {
 					explorer = {
 						hidden = true,
 						ignored = true,
-					},
+            win = {
+              list = {
+                keys = {
+                  ["<c-v>"] = false,      -- disable original Ctrl+v
+                  ["s"] = "edit_vsplit",  -- remap vertical split to s
+                },
+              },
+            },
+          },
 					files = {
 						hidden = true,
 						ignored = true,
